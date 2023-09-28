@@ -1,0 +1,174 @@
+.swiper-box {
+  position: relative;
+  display: flex;
+  height: 829px;
+}
+
+.swiper {
+  //   margin-top: 0;
+}
+
+.swiper-slide {
+  position: relative;
+  width: 100%;
+  //   text-align: center;
+  //   font-size: 18px;
+  //   background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  //   justify-content: center;
+  //   align-items: center;
+}
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-btn {
+  position: absolute;
+
+  padding: 24px 50px;
+  left: 400px;
+  bottom: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #333333;
+  border: none;
+  &:hover .swiper-btn-link,
+  &:focus .swiper-btn-link {
+    transform: scaleX(1.1);
+  }
+}
+
+.swiper-btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  transition: transform $durationFunction $timingFunction;
+}
+
+.swiper-btn-icon {
+  margin-left: 12px;
+}
+
+.swiper-box-title {
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 330px;
+  background-color: #fff;
+}
+
+.box-title-project {
+  font-size: 64px;
+  font-weight: 500;
+  color: #bdbdbd;
+  text-transform: uppercase;
+}
+.box-title {
+  font-size: 64px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.box-paginator {
+  position: absolute;
+  display: flex;
+  width: 400px;
+  height: 829px;
+  padding-top: 554px;
+}
+
+.swiper-button-next {
+  position: static;
+  content: '';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+  padding: 13px;
+  height: 53px;
+  width: 53px;
+  transition: transform $durationFunction $timingFunction,
+    box-shadow $durationFunction $timingFunction;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+    box-shadow: $boxShadow;
+  }
+}
+
+.swiper-button-prev {
+  position: static;
+  content: '';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+  padding: 13px;
+  height: 53px;
+  width: 53px;
+  margin-right: 23px;
+  transition: transform $durationFunction $timingFunction,
+    box-shadow $durationFunction $timingFunction;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.02);
+    box-shadow: $boxShadow;
+  }
+}
+
+.swiper-button-next:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: '';
+}
+
+.swiper-button-prev:after,
+.swiper-container-rtl .swiper-button-prev:after {
+  content: '';
+}
+
+.swiper-pagination {
+  font-size: 24px;
+  display: flex;
+  margin-bottom: 104px;
+  width: 142px;
+  color: #e0e0e0;
+}
+
+.swiper-pagination-fraction {
+  display: flex;
+  margin-bottom: 104px;
+  width: 142px;
+  color: #e0e0e0;
+}
+
+.custom-pagination {
+  content: '';
+  position: relative;
+  margin-right: 89px;
+  color: #bdbdbd;
+}
+
+.custom-pagination::after {
+  position: absolute;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  width: 44px;
+  height: 2px;
+  background-color: #e0e0e0; /* Цвет линии */
+  transform: translateY(100%) rotate(-45deg);
+  transform-origin: top left;
+}
+
+.total-pagination {
+  color: #bdbdbd;
+}

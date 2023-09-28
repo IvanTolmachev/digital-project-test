@@ -1,2 +1,14 @@
 @import './common';
-@import './example';
+@import './fonts';
+@import './mixins/mixins';
+@import './utils/variables';
+@import './utils/base';
+@import './utils/container';
+@import './utils/visuallyHiden';
+@import './components/header';
+@import './components/heroGallery';
+@import './components/about';
+@import './components/project';
+@import './components/tasks';
+@import './components/contact';
+@import './components/footer';
